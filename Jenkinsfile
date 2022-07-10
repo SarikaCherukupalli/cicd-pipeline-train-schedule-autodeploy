@@ -15,7 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    app = docker.build('sarikacherukupalli/project2')
+                    app = docker.build(sarikacherukupalli/project2)
                     app.inside {
                         sh 'echo Hello, World!'
                     }
