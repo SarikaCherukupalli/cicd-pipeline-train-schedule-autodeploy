@@ -1,5 +1,7 @@
 pipeline {
-    agent master
+    agent {
+        label 'master'
+    }
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "sarikacherukupalli/project2"
